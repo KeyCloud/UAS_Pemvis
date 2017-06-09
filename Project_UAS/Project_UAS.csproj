@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F03832EC-8207-432C-9925-525DD150D67A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_UAS</RootNamespace>
+    <AssemblyName>Project_UAS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>5CD52F1A8705125DF044F9DE5001BB7473A0AEEB</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Project_UAS_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Richard\Desktop\Project_pemvis\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\..\..\Downloads\mysql-connector-net-5.2.7-noinstall\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsenPerkuliahan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbsenPerkuliahan.Designer.cs">
+      <DependentUpon>AbsenPerkuliahan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsensiMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbsensiMhs.Designer.cs">
+      <DependentUpon>AbsensiMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardDosen.Designer.cs">
+      <DependentUpon>DashboardDosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardMhs.Designer.cs">
+      <DependentUpon>DashboardMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosenUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosenUpdate.Designer.cs">
+      <DependentUpon>DosenUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosenUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosenUpdate1.Designer.cs">
+      <DependentUpon>DosenUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDosen.Designer.cs">
+      <DependentUpon>FormDosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKrs.Designer.cs">
+      <DependentUpon>FormKrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMatkul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMatkul.Designer.cs">
+      <DependentUpon>FormMatkul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMhs.Designer.cs">
+      <DependentUpon>FormMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputNilai.Designer.cs">
+      <DependentUpon>InputNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalDosen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JadwalDosen.Designer.cs">
+      <DependentUpon>JadwalDosen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JadwalMhs.Designer.cs">
+      <DependentUpon>JadwalMhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MhsNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MhsNilai.Designer.cs">
+      <DependentUpon>MhsNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MhsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MhsUpdate.Designer.cs">
+      <DependentUpon>MhsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MhsUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MhsUpdate1.Designer.cs">
+      <DependentUpon>MhsUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbsenPerkuliahan.resx">
+      <DependentUpon>AbsenPerkuliahan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsensiMhs.resx">
+      <DependentUpon>AbsensiMhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardDosen.resx">
+      <DependentUpon>DashboardDosen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardMhs.resx">
+      <DependentUpon>DashboardMhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosenUpdate.resx">
+      <DependentUpon>DosenUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosenUpdate1.resx">
+      <DependentUpon>DosenUpdate1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDosen.resx">
+      <DependentUpon>FormDosen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKrs.resx">
+      <DependentUpon>FormKrs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMatkul.resx">
+      <DependentUpon>FormMatkul.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMhs.resx">
+      <DependentUpon>FormMhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputNilai.resx">
+      <DependentUpon>InputNilai.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JadwalDosen.resx">
+      <DependentUpon>JadwalDosen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JadwalMhs.resx">
+      <DependentUpon>JadwalMhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MhsNilai.resx">
+      <DependentUpon>MhsNilai.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MhsUpdate.resx">
+      <DependentUpon>MhsUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MhsUpdate1.resx">
+      <DependentUpon>MhsUpdate1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Project_UAS_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
